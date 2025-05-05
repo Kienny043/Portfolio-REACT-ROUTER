@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const services = [
     { id: 1, title: "Frontend Development", description: "Building modern and responsive web interfaces using ReactJS and TailwindCSS." },
@@ -27,12 +28,12 @@ const Services = () => {
                                 {service.title}
                             </h3>
                             <p className="text-gray-300 mb-4">{service.description}</p>
-                            <a
-                                href="#"
+                            <Link
+                                to="*"
                                 className="inline-block text-sm font-medium text-pink-400 hover:text-purple-400 transition-colors duration-200"
                             >
                                 Read More →
-                            </a>
+                            </Link>
                         </div>
                     ))}
                 </div>
